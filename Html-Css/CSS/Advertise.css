@@ -188,6 +188,44 @@ main {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+.FAQ {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-bottom: 20px;
+}
+.para {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 80%;
+  margin-left: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}#faq h1 {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+#faq {
+  margin-bottom: 20px;
+}.FAQ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
 
 @media (max-width: 600px) {
   header {
@@ -254,6 +292,14 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   }
+   .faq {
+    display: block;
+   }
+   
+     
+   .FAQ .active{
+    display: block;
    }
 
 
