@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+.logo_list,
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+ul.list {
+  display: flex;
+  gap: 1rem;
+}
+.list li a {
+  display: flex;
+}
+
+.logo_list {
+  display: flex;
+  gap: 30%;
+}
+
+.getstarted {
+  display: flex;
+  flex-direction: column;
+  color: #0a8080;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+}
+
+.login {
+  display: flex;
+  gap: 5px;
+}
+
+.head_img img {
+  padding: 15px 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.txt {
+  z-index: 6;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.contact_box {
+  background-color: #ffbb00;
+  padding: 15px 50px;
+  margin-right: -20px;
+  z-index: 4;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.position {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+h4 {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+form {
+  background-color: #fff5ed;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+}
+label {
+  display: none;
+}
+
+.input-field {
+  border: none;
+  margin: 10px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  width: 500px;
+  height: auto;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+input::placeholder {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 16px;
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.975);
+}
+textarea::placeholder {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 16px;
+  font-size: larger;
+  color: black;
+}
+
+.fiel {
+  border: none;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  width: 500px;
+  height: auto;
+  padding: 35px;
+}
+.btn {
+  background-color: #d9d9d9;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 20px;
+  width: 100px;
+  height: 55px;
+  margin-left: 78%;
+}
+
+footer {
+  padding: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-col1 h5 {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+h5 {
+  font-size: medium;
+  font-weight: 18px;
+}
+.footer-container ul {
+  font-size: small;
+  font-weight: 15px;
+  color: black;
+}
+.menu_btn {
+  background-color: #d9d9d9;
+  font-size: 30px;
+  width: 35px;
+  height: 34px;
+  border-radius: 8%;
+  text-align: center;
+  display: none;
+}
+.Social {
+  display: none;
+}
+
+#error{
+    display: none;
+    color: red;
+  }
+@media (max-width: 600px) {
+  header {
+    background-color: #fdf3d5;
+  }
+  body {
+    background-color: #fbede5;
+  }
+
+  .menu_btn {
+    display: block;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aquamarine;
+    position: absolute;
+    width: 272px;
+    height: 50vh;
+    top: 11%;
+    right: -2%;
+    transform: translateY(-130%);
+    transition: 0.3s;
+  }
+  .list.active {
+    transform: translateY(0%);
+  }
+
+  .login {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+  }
+  .contact_box {
+    background-color: #b7ecef;
+    padding: 15px 50px;
+    margin-right: -20px;
+  }
+  h4 {
+    background-color: transparent;
+  }
+  .position {
+    display: none;
+  }
+  form {
+    align-items: center;
+    max-width: 600px;
+  }
+  label {
+    display: block;
+  }
+  form,
+  label {
+    background-color: blue;
+    display: grid;
+    border-radius: 10%;
+  }
+  input::placeholder {
+    color: transparent;
+  }textarea{
+    
+  }
+  textarea::placeholder{
+    color: transparent;
+  } 
+  h3 {
+  }
+  .container {
+    margin-top: 20px;
+    width: auto;
+    background-color: red;
+  }
+  form input,
+  textarea {
+
+    max-width: 350px;
+  }
+  .btn {
+    margin: auto;
+    margin-top: 2rem;
+    background-color: #EFE2DA;
+  }
+  .head_img {
+    display: none;
+  }
+  .Social {
+    display: block;
+  }
+  .Social h5 {
+    display: none;
+  }
+
+  .Social ul {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    padding: 12px;
+  }
+  .footer-container {
+    display: none;
+  }
+}
